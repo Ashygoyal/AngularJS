@@ -23,7 +23,10 @@ app.config(function($routeProvider){
     controller: 'SecondController'
   })
   
-  
+  // below is the default route when none of the others get matched
+  .otherwise({
+    template : "<h1>Nothing</h1><p>Nothing has been selected</p>"
+  })  
   
 });
 
